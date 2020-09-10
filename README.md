@@ -56,6 +56,8 @@ $ docker restart django_webstack
 主页: ```http://localhost:8000```  
 管理员界面: ```http://localhost:8000/admin```
 
+分组和站点排序：以权重参数降序排列
+
 ## Thanks
 前端设计：[**WebStackPage**](https://github.com/WebStackPage/WebStackPage.github.io)
 
