@@ -6,6 +6,7 @@
 
 1. Webstack页面 可配置
 2. 优化Django-Admin显示
+3. 添加 about page
 
 ## Installation
 
