@@ -9,7 +9,7 @@ class MenuAdmin(admin.ModelAdmin):
     list_display = ('name', 'icon', 'weight')
 
 class WebsiteAdmin(admin.ModelAdmin):
-
+    list_filter = ['menu']
     list_display = ('name', 'description', 'url', 'weight', 'menu')
 
 
