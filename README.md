@@ -1,6 +1,6 @@
 # Django_Webstack
 
-> 一款基于 Django 和 [WebStackPage](https://github.com/WebStackPage/WebStackPage.github.io) 导航系统
+> 一款基于 Django 和 [WebStackPage](https://github.com/WebStackPage/WebStackPage.github.io) 网站导航系统
 
 ## Future
 
@@ -16,10 +16,11 @@ $ git clone https://github.com/auosun/django_webstack.git
 ```
 
 ### Docker 
-> 基于 Docker Django官方镜像构建
+> 基于 Docker Django 官方镜像构建
 
-构建镜像：
+构建镜像方法：
 ```
+# 主目录运行
 $ docker build -t django_webstack .
 ```
 
@@ -32,6 +33,7 @@ $ docker pull pikaczy/django_webstack
 ```
 $ docker run --name django_webstack -v <Django代码目录>:/usr/src/app -w /usr/src/app -p 8000:8000 -d pikaczy/django_webstack
 ```
+或  
 
 直接运行镜像:
 ```
@@ -54,11 +56,12 @@ $ docker restart django_webstack
 
 ## Usage
 主页: ```http://localhost:8000```  
-管理员界面: ```http://localhost:8000/admin```
+
+管理员界面: ```http://localhost:8000/admin```  
 
 分组和站点排序：以权重参数降序排列
 
 ## Thanks
 前端设计：[**WebStackPage**](https://github.com/WebStackPage/WebStackPage.github.io)
 
-Web框架：[**Django**](https://github.com/django/django) 后台框架使用 Django-Admin 
+Web框架：[**Django**](https://github.com/django/django) 后台使用 Django-Admin 
