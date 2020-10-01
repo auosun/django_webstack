@@ -54,12 +54,33 @@ $$ exit #退出容器
 $ docker restart django_webstack
 ```
 
+更新:
+- 使用本地django代码
+```
+$ cd <Django代码目录>
+$ git pull
+$ docker restart django_webstack
+```
+- 直接使用容器代码
+```
+$ docker cp <container-id>:/usr/src/app/db.sqlite3 .
+$ docker pull pikaczy/django_webstack:latest
+$ docker stop <container-id>
+$ docker rm <container-id>
+# 重新启动容器
+# docker cp db.sqlite3 <container-id>:/usr/src/app/ 
+# 重启容器
+```
+
 ## Usage
 主页: ```http://localhost:8000```  
 
 管理员界面: ```http://localhost:8000/admin```  
 
 分组和站点排序：以权重参数降序排列
+
+## Update record
+01/10/2020 22:48 添加管理员list界面可编辑功能
 
 ## Thanks
 前端设计：[**WebStackPage**](https://github.com/WebStackPage/WebStackPage.github.io)
